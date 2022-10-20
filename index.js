@@ -41,7 +41,7 @@ const todoList = () => {
     // ..
     // ..
     // return OUTPUT_STRING
-    return list.map(item=>` ${item.completed ? [x]: [ ]} ${item.title} ${item.dueDate==new Date().toLocaleDateString("en-CA")}`);
+    return list.map(item=>` ${item.completed ? '[x]': ' ']} ${item.title} ${item.dueDate==new Date().toLocaleDateString("en-CA")}`);
   }
 
   return { all, add, markAsComplete, overdue, dueToday, dueLater, toDisplayableList };
